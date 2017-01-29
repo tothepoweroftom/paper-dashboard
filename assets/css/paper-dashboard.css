@@ -23,6 +23,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p, .navbar, .brand, a, .td
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   font-family: 'Muli', "Helvetica", Arial, sans-serif;
+  color: white;
 }
 
 h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
@@ -69,7 +70,7 @@ p {
 }
 
 h1 small, h2 small, h3 small, h4 small, h5 small, h6 small, .h1 small, .h2 small, .h3 small, .h4 small, .h5 small, .h6 small, h1 .small, h2 .small, h3 .small, h4 .small, h5 .small, h6 .small, .h1 .small, .h2 .small, .h3 .small, .h4 .small, .h5 .small, .h6 .small {
-  color: #9A9A9A;
+  color: #fff;
   font-weight: 300;
   line-height: 1.4em;
 }
@@ -95,7 +96,7 @@ blockquote small {
 }
 
 .text-primary, .text-primary:hover {
-  color: #427C89;
+  color: #fff;
 }
 
 .text-info, .text-info:hover {
@@ -119,7 +120,7 @@ blockquote small {
 }
 
 strong {
-  color: #403D39;
+  color: #fff;
 }
 
 .icon-primary {
@@ -143,7 +144,7 @@ strong {
 }
 
 .chart-legend .text-primary, .chart-legend .text-primary:hover {
-  color: #7A9E9F;
+  color: #fff;
 }
 .chart-legend .text-info, .chart-legend .text-info:hover {
   color: #68B3C8;
@@ -160,7 +161,7 @@ strong {
 
 /*     General overwrite     */
 body {
-  color: #66615b;
+  color: #000;
   font-size: 14px;
   font-family: 'Muli', Arial, sans-serif;
 }
@@ -375,12 +376,12 @@ hr {
   z-index: 2;
   background: #FFFFFF;
 }
-.sidebar:after, .sidebar:before, .sidebar[data-background-color="white"]:after, .sidebar[data-background-color="white"]:before,
+.sidebar:after, .sidebar:before, .sidebar[data-background-color="grey"]:after, .sidebar[data-background-color="white"]:before,
 .off-canvas-sidebar:after,
 .off-canvas-sidebar:before,
-.off-canvas-sidebar[data-background-color="white"]:after,
-.off-canvas-sidebar[data-background-color="white"]:before {
-  background-color: #FFFFFF;
+.off-canvas-sidebar[data-background-color="black"]:after,
+.off-canvas-sidebar[data-background-color="black"]:before {
+  background-color: #333;
 }
 .sidebar .logo, .sidebar[data-background-color="white"] .logo,
 .off-canvas-sidebar .logo,
@@ -390,17 +391,17 @@ hr {
 .sidebar .logo p, .sidebar[data-background-color="white"] .logo p,
 .off-canvas-sidebar .logo p,
 .off-canvas-sidebar[data-background-color="white"] .logo p {
-  color: #66615B;
+  color: #fff;
 }
 .sidebar .logo .simple-text, .sidebar[data-background-color="white"] .logo .simple-text,
 .off-canvas-sidebar .logo .simple-text,
 .off-canvas-sidebar[data-background-color="white"] .logo .simple-text {
-  color: #66615B;
+  color: #fff;
 }
 .sidebar .nav li:not(.active) > a, .sidebar[data-background-color="white"] .nav li:not(.active) > a,
 .off-canvas-sidebar .nav li:not(.active) > a,
 .off-canvas-sidebar[data-background-color="white"] .nav li:not(.active) > a {
-  color: #66615B;
+  color: #fff;
 }
 .sidebar .nav .divider, .sidebar[data-background-color="white"] .nav .divider,
 .off-canvas-sidebar .nav .divider,
@@ -459,7 +460,7 @@ hr {
 }
 
 .main-panel {
-  background-color: #f4f3ef;
+  background-color: #333;
   position: relative;
   z-index: 2;
   float: right;
@@ -1413,6 +1414,7 @@ textarea.form-control {
   margin: 5px 0px;
   padding: 20px 15px;
   font-size: 20px;
+  color: white;
 }
 .navbar .navbar-nav > li > a {
   line-height: 1.42857;
@@ -1446,8 +1448,8 @@ textarea.form-control {
 }
 
 .navbar-default {
-  background-color: #f4f3ef;
-  border-bottom: 1px solid #DDDDDD;
+  background-color: #333;
+  border-bottom: 1px solid #555;
 }
 .navbar-default .brand {
   color: #66615b !important;
@@ -1554,6 +1556,7 @@ textarea.form-control {
   background-attachment: fixed;
   position: relative;
   line-height: 20px;
+  color: white;
 }
 .footer nav ul {
   list-style: none;
@@ -1707,7 +1710,7 @@ textarea.form-control {
 .card {
   border-radius: 6px;
   box-shadow: 0 2px 2px rgba(204, 197, 185, 0.5);
-  background-color: #FFFFFF;
+  background-color: #444;
   color: #252422;
   margin-bottom: 20px;
   position: relative;
@@ -1757,7 +1760,7 @@ textarea.form-control {
 }
 .card .title {
   margin: 0;
-  color: #252422;
+  color: #fff;
   font-weight: 300;
 }
 .card .avatar {
@@ -1811,6 +1814,14 @@ textarea.form-control {
   margin: 30px 0 30px;
   height: 245px;
 }
+
+.ct-labels span {
+  color: white;
+}
+.ct-grids line {
+  color: white;
+}
+
 .card .table tbody td:first-child,
 .card .table thead th:first-child {
   padding-left: 15px;
@@ -1833,6 +1844,7 @@ textarea.form-control {
 .card .numbers {
   font-size: 2em;
   text-align: right;
+  color: white;
 }
 .card .numbers p {
   margin: 0;
@@ -1863,10 +1875,10 @@ textarea.form-control {
   margin-top: -65px;
 }
 .card-user .author .title {
-  color: #403D39;
+  color: #fff;
 }
 .card-user .author .title small {
-  color: #ccc5b9;
+  color: #ff3;
 }
 .card-user .avatar {
   width: 100px;
@@ -1883,6 +1895,8 @@ textarea.form-control {
 }
 .card-user .title {
   font-weight: 600;
+  color: #fff;
+
   line-height: 24px;
 }
 .card-user .description {
@@ -2810,7 +2824,7 @@ textarea.form-control {
   }
   .off-canvas-sidebar .nav > li > a {
     margin: 0px 0px;
-    color: #66615B;
+    color: #444;
     text-transform: uppercase;
     font-weight: 600;
     font-size: 12px;
